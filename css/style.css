@@ -58,11 +58,45 @@ body {
   padding: 1rem 2rem;
   border-radius: 3rem;
   transition: background-color 0.3s;
+  position: relative;
 }
 
-.hero-textbox .btn:hover,
+.hero-textbox .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
 .hero-textbox .btn:active {
-  background-color: #316cda;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-animated::after {
+  content: "";
+  display: inline-block;
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  transition: all 0.4s;
+}
+
+.btn-animated::after {
+  background-color: var(--btn-color);
+  color: #fff;
+}
+
+.btn-animated:hover::after {
+  transform: scalex(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveinBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
 
 /* TYPOGRAPHY */
@@ -317,20 +351,31 @@ ul.main-nav-list,
     gap: 3rem;
   }
 
-  .navigation #checkbox:checked ~ .main-nav-container .main-nav-list {
-    transform: translateX(0);
-  }
-
   .navigation .nav_button {
     display: flex;
     position: relative;
     z-index: 101;
     font-size: 3rem;
     background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
   }
 
-  .nav_actions .nav_button span {
+  .nav_actions .nav_button span.close {
+    display: none;
+  }
+  .nav_actions .nav_button span.open {
     display: flex;
+  }
+
+  .navigation #checkbox:checked ~ .main-nav-container .main-nav-list {
+    transform: translateX(0);
+  }
+  .navigation #checkbox:checked ~ .nav_actions .nav_button span.close {
+    display: flex;
+  }
+  .navigation #checkbox:checked ~ .nav_actions .nav_button span.open {
+    display: none;
   }
 }
 
@@ -396,7 +441,7 @@ ul.main-nav-list,
   }
 
   nav.navigation {
-    height: 7.6rem;
+    height: 8.4rem;
     padding: 1.9rem 2.5rem;
     font-size: 1.4rem;
   }
@@ -453,9 +498,22 @@ ul.main-nav-list,
     letter-spacing: -0.5px;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
+    animation-name: moveinright;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
   }
   .hero-paragraph {
+    display: block;
     font-size: 1.3rem;
+    color: var(--primary-color);
+    line-height: 1.3;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+
+  .paragraph {
+    font-size: 1.6rem;
     color: var(--primary-color);
     line-height: 1.3;
   }
@@ -467,5 +525,8 @@ ul.main-nav-list,
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
   }
 }
