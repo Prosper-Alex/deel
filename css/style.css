@@ -30,12 +30,15 @@ ACCENT COLOR:#00AC6B;
 html {
   /* 10px / 16px = 0.625 = 62.5% */
   font-size: 62.5%;
+  overflow-x: hidden !important;
 }
 
 body {
   font-family: "Inter", sans-serif;
   color: #06122c;
   font-weight: 400;
+
+  overflow-x: hidden !important;
 }
 
 /* UTILITIES */
