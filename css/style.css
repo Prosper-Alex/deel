@@ -128,6 +128,12 @@ body {
   font-weight: 550;
 }
 
+.heading-secondary.sm {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 550;
+}
+
 .heading-tertiary {
   font-size: 1.8rem;
   font-weight: 600;
@@ -341,6 +347,52 @@ section.section-about .about-wrapper .about-icon {
   margin-bottom: 2rem;
 }
 section.section-about .about-wrapper .about-icon img {
+  height: 100%;
+  width: 100%;
+}
+/* SECTION DESCRIPTION */
+
+section.section-description {
+  margin-top: 6rem;
+  padding-bottom: 9rem;
+  background-color: #fff4e0;
+  position: relative;
+}
+
+section.section-description .description {
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+section.section-description .description .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+section.section-description .description .heading-secondary {
+  width: 80%;
+  margin: 0 auto;
+}
+section.section-description .description .paragraph {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+section.section-description .description-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+  width: 50rem;
+  margin-top: 5rem;
+}
+section.section-description .description-img img {
   height: 100%;
   width: 100%;
 }
