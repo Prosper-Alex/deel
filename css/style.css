@@ -443,7 +443,157 @@ section.section-description .achievement-boxs {
   margin-bottom: 6rem;
 }
 
-@media only screen and (max-width: 1050px) {
+/* SECTION TOOLS */
+
+section.section-tools {
+  margin-top: 6rem;
+  padding-bottom: 9rem;
+}
+
+section.section-tools .tools .heading-secondary {
+  width: 30%;
+  line-height: 1.4;
+}
+
+section.section-tools .tools .paragraph {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+section.section-tools .tools .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.section-tools .tools .wrapper .arrows {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+section.section-tools .tools .wrapper .arrows .arrow-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #2c71f0;
+  border-radius: 50%;
+}
+section.section-tools .tools .wrapper .arrows .arrow-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #2c71f0;
+  border-radius: 50%;
+}
+
+section.section-tools .tool-boxs {
+  display: flex;
+  gap: 2rem;
+}
+
+section.section-tools .tool-boxs .box {
+  position: relative;
+  align-items: center;
+  padding: 2.4rem;
+  height: 35rem;
+  width: 100%;
+}
+
+section.section-tools .tool-boxs .box figure.box-img img {
+  width: 20rem;
+}
+
+section.section-tools .tool-boxs .box.green {
+  background-color: #00ac6b;
+}
+
+section.section-tools .tool-boxs .box.sky-blue {
+  background-color: #519af4;
+}
+
+section.section-tools .tool-boxs .box.blue {
+  background-color: #1c4396;
+}
+
+section.section-tools .tool-boxs .box.orange {
+  background-color: #f78400;
+}
+
+section.section-tools .tool-boxs .box .box-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.section-tools .tool-boxs .text {
+  width: 80%;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+section.section-tools .tool-boxs .box-btn {
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.section-tools .tool-boxs .box-btn span {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+section.section-tools .tool-btn {
+  margin: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.section-tools .tool-btn span {
+  color: #2f5edd;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 1px solid #2f5edd;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.section-tools .tools .heading-secondary {
+    width: 40%;
+    line-height: 1.4;
+  }
+
+  section.section-tools .tools .paragraph {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+
+  section.section-tools .tool-boxs .text {
+    width: 100%;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  section.section-tools .tool-boxs {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: ) @media only screen and (max-width: 1050px) {
   .heading-primary {
     font-size: 4rem;
     font-weight: 700;
