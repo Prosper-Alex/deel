@@ -556,6 +556,7 @@ section.section-tools .tool-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 section.section-tools .tool-btn span {
   color: #2f5edd;
@@ -593,7 +594,15 @@ section.section-tools .tool-btn span {
   }
 }
 
-@media only screen and (max-width: ) @media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1105px) {
+  section.section-tools .grid-4-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
   .heading-primary {
     font-size: 4rem;
     font-weight: 700;
@@ -973,6 +982,60 @@ section.section-tools .tool-btn span {
     justify-content: center;
     text-align: center;
   }
+
+  section.section-tools .tools .heading-secondary {
+    width: 60%;
+    line-height: 1.4;
+  }
+
+  section.section-tools .tool-boxs .box {
+    position: relative;
+    align-items: center;
+    height: 25rem;
+    width: 100%;
+    padding: 2.4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section.section-tools .tools .tool-textbox {
+    text-align: center;
+  }
+
+  section.section-tools .tools .heading-secondary {
+    width: 100%;
+    line-height: 1.4;
+  }
+  section.section-tools .tools .paragraph {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  section.section-tools .tools .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section.section-tools .tools .wrapper .arrows {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  section.section-tools .tool-boxs .text {
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  section.section-tools .tool-boxs .box figure.box-img img {
+    width: 17rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1070,6 +1133,10 @@ section.section-tools .tool-btn span {
     align-items: center;
     justify-content: center;
   }
+
+  section.section-tools .tool-boxs .box figure.box-img img {
+    width: 12rem;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1095,5 +1162,13 @@ section.section-tools .tool-btn span {
     text-transform: capitalize;
     line-height: 1.2;
     margin: 1rem;
+  }
+
+  section.section-tools .tool-boxs .text {
+    width: 100%;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 2rem;
   }
 }
