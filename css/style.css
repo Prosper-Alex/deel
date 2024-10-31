@@ -1172,3 +1172,15 @@ section.section-tools .tool-btn span {
     margin-top: 2rem;
   }
 }
+@media only screen and (max-width: 350px) {
+  section.section-tools .tool-boxs .text {
+    width: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  section.section-tools .tool-boxs .box figure.box-img img {
+    width: 10rem;
+  }
+}
