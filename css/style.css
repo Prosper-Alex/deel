@@ -14,6 +14,8 @@ ACCENT COLOR:#00AC6B;
 :root {
   --primary-color: #ffffff;
   --secondary-color: #15357a;
+
+  --background-color: #ebf5fe;
   --btn-color: #2c71f0;
 }
 
@@ -54,6 +56,7 @@ body {
 }
 
 /* COMPONENTS */
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -174,6 +177,10 @@ body {
 .paragraph .sm {
   font-size: 1.4rem;
   line-height: 1.3;
+}
+.paragraph-pb {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .hero-paragraph {
@@ -557,6 +564,7 @@ section.section-tools .tool-btn {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: #fff;
 }
 section.section-tools .tool-btn span {
   color: #2f5edd;
@@ -564,6 +572,44 @@ section.section-tools .tool-btn span {
   padding: 1rem 2rem;
   border-radius: 20px;
   border: 1px solid #2f5edd;
+}
+
+/* SECTION ANALYSIS */
+
+section.section-analysis {
+  margin-top: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 9rem;
+  background-color: var(--background-color);
+}
+
+section.section-analysis .analysis {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
+
+  align-items: center;
+}
+
+section.section-analysis .analysis-img {
+  /* height: 50rem; */
+  width: 100%;
+  object-fit: cover;
+}
+
+section.section-analysis .analysis-img img {
+  height: 100%;
+  width: 100%;
+}
+
+section.section-analysis .analysis-list {
+  display: flex;
+
+  gap: 0.5rem;
+}
+
+.section-analysis .btn {
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1038,6 +1084,11 @@ section.section-tools .tool-btn span {
   }
 }
 
+@media only screen and (max-width: 460px) {
+  section.section-tools .tool-boxs .box figure.box-img img {
+    width: 12rem;
+  }
+}
 @media only screen and (max-width: 450px) {
   /* TYPOGRAPHY */
   .heading-primary {
@@ -1133,10 +1184,6 @@ section.section-tools .tool-btn span {
     align-items: center;
     justify-content: center;
   }
-
-  section.section-tools .tool-boxs .box figure.box-img img {
-    width: 12rem;
-  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1172,6 +1219,21 @@ section.section-tools .tool-btn span {
     margin-top: 2rem;
   }
 }
+
+@media only screen and (max-width: 365px) {
+  section.section-tools .tool-boxs .text {
+    width: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  section.section-tools .tool-boxs .box figure.box-img img {
+    width: 10rem;
+  }
+}
+
 @media only screen and (max-width: 350px) {
   section.section-tools .tool-boxs .text {
     width: 100%;
