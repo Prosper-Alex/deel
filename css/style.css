@@ -54,6 +54,21 @@ body {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
 }
+.grid-5-cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+.blue{
+  display:inline-block;
+align-items: center;
+  color: #2f5edd;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 1px solid #2f5edd;
+}
 
 /* COMPONENTS */
 
@@ -611,6 +626,82 @@ section.section-analysis .analysis-list {
 .section-analysis .btn {
   margin-top: 2rem;
 }
+
+
+/* SECTION EXPLORE */
+
+
+section.section-explore{
+  margin-top: 6rem;
+  padding-bottom: 9rem;
+
+}
+section.section-explore .explore{
+text-align: center;
+
+}
+
+.explore .explore-textbox{
+text-align: center;
+}
+
+
+  .explore .explore-textbox {
+   text-align: center;
+
+ }
+
+ .explore .explore-textbox .heading-secondary{
+  width: 45%;
+  line-height: 1.4;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+ }
+ 
+ .explore .explore-textbox .paragraph{
+  width: 50%;
+  line-height: 1.4;
+  margin: 0 auto;
+ }
+
+.explore-images{
+
+  display: flex;
+  gap: 2rem;
+
+  margin: 7rem 0;
+  width: 100%;
+
+  height: 40rem;
+ }
+
+.explore-images img{
+  width: 100%;
+
+  height: 100%;
+
+ }
+.explore-images img:nth-child(2):hover {
+
+margin-bottom: 7rem;
+
+
+}
+
+ 
+.explore-images img:nth-child(4):hover{
+
+
+  margin-bottom: 7rem;
+
+ }
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1200px) {
   section.section-tools .tools .heading-secondary {
