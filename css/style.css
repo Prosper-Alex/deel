@@ -1260,6 +1260,7 @@ section.section-explore .explore .explore-btn span {
     padding: 1rem 2rem;
     border-radius: 20px;
     border: 1px solid #2f5edd;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1485,6 +1486,7 @@ section.section-explore .explore .explore-btn span {
     font-weight: bold;
     margin-top: 2rem;
   }
+
   section.section-tools .tool-boxs .box figure.box-img img {
     width: 10rem;
   }
