@@ -854,20 +854,18 @@ section.section-rating .rating .rating-textbox .rating-btn a {
   text-align: center;
 }
 
-.ratings .rating_box .rate-heading{
+.ratings .rating_box .rate-heading {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 2rem;
   color: var(--secondary-color);
 }
-.ratings .rating_box .paragraph{
-font-weight: 400;
+.ratings .rating_box .paragraph {
+  font-weight: 400;
 }
 
-
-
-.ratings .rating_box .paragraph{
-  width: 90%;
+.ratings .rating_box .paragraph {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -992,6 +990,15 @@ font-weight: 400;
 }
 
 @media only screen and (max-width: 900px) {
+  /* TYPOGRAPHY */
+
+  .heading-secondary {
+    font-size: 3rem;
+    font-weight: 550;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+  }
   /*  COMPONENTS */
 
   .btn:link,
@@ -1126,6 +1133,22 @@ font-weight: 400;
     padding: 1rem 0;
     color: #313cbd;
     background-color: var(--primary-color);
+  }
+
+  /* SECTION RATING */
+
+  .ratings {
+    gap: 4rem;
+    display: grid;
+    margin-top: 7rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ratings .rating_box .rate-heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
   }
 }
 
@@ -1298,6 +1321,20 @@ font-weight: 400;
     flex-direction: column;
     margin-top: 4rem;
   }
+
+  .section-business ul.business-btns {
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: 2rem 2rem;
+    color: #313cbd;
+    background-color: var(--primary-color);
+}
 }
 
 @media only screen and (max-width: 650px) {
@@ -1466,6 +1503,29 @@ font-weight: 400;
     border-radius: 20px;
     border: 1px solid #2f5edd;
   }
+
+  /* SECTION RATING */
+
+  .ratings {
+    gap: 2.5rem;
+    display: grid;
+    margin-top: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section.section-rating .rating .rating-textbox .paragraph {
+    margin-bottom: 3rem;
+    width:90%;
+  }
+
+  section.section-rating .rating .rating-textbox .rating-btn a {
+    display: inline-block;
+    color: #2f5edd;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid #2f5edd;
+    text-transform: capitalize;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -1506,6 +1566,16 @@ font-weight: 400;
 
   section.section-tools .tool-boxs .box figure.box-img img {
     width: 17rem;
+  }
+
+  /* SECTION RATING */
+  .ratings {
+    gap: 2rem;
+    display: grid;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1620,6 +1690,15 @@ font-weight: 400;
 
   .analysis-list img {
     height: 2rem;
+  }
+
+  /* SECTION RATING */
+
+  .ratings {
+    gap: 3rem;
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
