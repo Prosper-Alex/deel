@@ -958,10 +958,10 @@ section.section-rating .rating .rating-textbox .rating-btn a {
   border-radius: 20px;
   border: 1px solid var(--primary-color);
 }
-.section_join .join_btn-container .btn-box.arrow  {
-display: flex;
-align-items: center;
-gap: 1rem;
+.section_join .join_btn-container .btn-box.arrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1878,11 +1878,23 @@ gap: 1rem;
     text-decoration: none;
     border-radius: 3rem;
     padding: 2rem 2rem;
+    margin-bottom: 5rem;
     color: #313cbd;
     background-color: var(--primary-color);
   }
 
-  
+  .section_join .join_btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-box.arrow{
+    margin-left: 2rem;
+  }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -1917,6 +1929,8 @@ gap: 1rem;
     font-weight: bold;
     margin-top: 2rem;
   }
+
+
 }
 
 @media only screen and (max-width: 365px) {
