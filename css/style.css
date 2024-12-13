@@ -180,8 +180,11 @@ body {
   font-weight: 600;
   text-transform: capitalize;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  color: var(--secondary-color);
 }
+
 .heading-tertiary.sm {
   font-size: 1.7rem;
   font-weight: 600;
@@ -868,6 +871,99 @@ section.section-rating .rating .rating-textbox .rating-btn a {
   width: 100%;
 }
 
+.rating_info {
+  margin-top: 4rem;
+}
+
+.rating_info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 5rem;
+  margin-top: 4rem;
+  border-radius: 3rem;
+  background-color: var(--background-color-blue);
+}
+
+.rating_info--textbox-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex: 1.6;
+}
+
+.rating_info--textbox-wrapper figure.rating_info-image {
+  height: 25rem;
+  width: 30rem;
+}
+.rating_info--textbox-wrapper figure.rating_info-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.rating_info--textbox-wrapper .paragraph {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rating_info-container .rating_info-btn {
+  flex: 0.6;
+  flex-shrink: 0;
+}
+.rating_info-container .rating_info-btn a {
+  display: inline-block;
+  color: var(--primary-color);
+  background-color: var(--btn-color);
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  padding: 1.5rem 1rem;
+}
+
+/* SECTION JOIN */
+
+.section_join {
+  background-color: #519af4;
+  padding: 8rem 3rem;
+  margin-bottom: 5rem;
+}
+
+.section_join .join-textbox {
+  text-align: center;
+}
+
+.section_join .join-textbox .heading-secondary {
+  color: var(--primary-color);
+}
+.section_join .join-textbox .paragraph {
+  color: var(--primary-color);
+}
+
+.section_join .join_btn-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_join .join_btn-container .btn-box a {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+
+.section_join .join_btn-container .btn-box.border a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--primary-color);
+}
+.section_join .join_btn-container .btn-box.arrow  {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
 @media only screen and (max-width: 1200px) {
   section.section-tools .tools .heading-secondary {
     width: 40%;
@@ -901,6 +997,19 @@ section.section-rating .rating .rating-textbox .rating-btn a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  /* SECTION RATING */
+
+  .rating_info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 5rem;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    background-color: var(--background-color-blue);
   }
 }
 
@@ -1111,6 +1220,20 @@ section.section-rating .rating .rating-textbox .rating-btn a {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 3rem;
+  }
+
+  /* SECTION RATING */
+
+  .rating_info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 5rem;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    background-color: var(--background-color-blue);
   }
 }
 
@@ -1324,7 +1447,7 @@ section.section-rating .rating .rating-textbox .rating-btn a {
 
   .section-business ul.business-btns {
     display: grid;
-grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     font-size: 1.4rem;
     align-items: center;
@@ -1334,7 +1457,18 @@ grid-template-columns: repeat(3, 1fr);
     padding: 2rem 2rem;
     color: #313cbd;
     background-color: var(--primary-color);
+  }
 }
+
+@media only screen and (max-width: 700px) {
+  .rating_info--textbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1512,9 +1646,13 @@ grid-template-columns: repeat(3, 1fr);
     margin-top: 6rem;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  section.section-rating .rating .rating-textbox {
+    align-items: center;
+  }
   section.section-rating .rating .rating-textbox .paragraph {
     margin-bottom: 3rem;
-    width:90%;
+    width: 100%;
   }
 
   section.section-rating .rating .rating-textbox .rating-btn a {
@@ -1525,7 +1663,7 @@ grid-template-columns: repeat(3, 1fr);
     border-radius: 20px;
     border: 1px solid #2f5edd;
     text-transform: capitalize;
-}
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1577,11 +1715,26 @@ grid-template-columns: repeat(3, 1fr);
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .rating_info--textbox-wrapper figure.rating_info-image {
+    height: 20rem;
+    width: 20rem;
+  }
+  .rating_info--textbox-wrapper figure.rating_info-image img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 460px) {
   section.section-tools .tool-boxs .box figure.box-img img {
     width: 12rem;
+  }
+
+  /* SECTION RATING */
+  .rating_info--textbox-wrapper .paragraph {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -1712,6 +1865,24 @@ grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
     margin-bottom: 4rem;
   }
+
+  /* SECTION BUSINESS */
+
+  .section-business ul.business-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: 2rem 2rem;
+    color: #313cbd;
+    background-color: var(--primary-color);
+  }
+
+  
 }
 
 @media only screen and (max-width: 380px) {
