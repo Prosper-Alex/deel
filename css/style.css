@@ -925,8 +925,8 @@ section.section-rating .rating .rating-textbox .rating-btn a {
 
 .section_join {
   background-color: #519af4;
-  padding: 8rem 3rem;
-  margin-bottom: 5rem;
+  padding: 10rem 3rem;
+
 }
 
 .section_join .join-textbox {
@@ -936,13 +936,14 @@ section.section-rating .rating .rating-textbox .rating-btn a {
 .section_join .join-textbox .heading-secondary {
   color: var(--primary-color);
 }
+
 .section_join .join-textbox .paragraph {
   color: var(--primary-color);
 }
 
 .section_join .join_btn-container {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
   align-items: center;
   justify-content: center;
 }
@@ -958,10 +959,58 @@ section.section-rating .rating .rating-textbox .rating-btn a {
   border-radius: 20px;
   border: 1px solid var(--primary-color);
 }
+
 .section_join .join_btn-container .btn-box.arrow {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+/* FOOTER */
+
+footer.footer{
+  background-color: var(--secondary-color);
+  padding: 4rem 15rem ;
+  height: 70vh;
+
+}
+
+footer.footer .footer-container{
+  display: flex;
+  justify-content:space-between;
+  color: var(--primary-color);
+
+}
+
+.footer-textbox .heading-secondary{
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+
+footer.footer .footer-container .footer-list ul{
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  height: 30rem;
+}
+footer.footer .footer-container .footer-list .list-heading{
+font-size: 2rem;
+margin-bottom: 3.5rem;
+font-weight: 400;
+}
+
+footer.footer .footer-container .footer-list .language{
+  margin-top: 25rem;
+}
+
+
+
+.footer-textbox .footer-logos{
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1891,10 +1940,9 @@ section.section-rating .rating .rating-textbox .rating-btn a {
     justify-content: center;
   }
 
-  .btn-box.arrow{
+  .btn-box.arrow {
     margin-left: 2rem;
   }
-
 }
 
 @media only screen and (max-width: 380px) {
@@ -1929,8 +1977,6 @@ section.section-rating .rating .rating-textbox .rating-btn a {
     font-weight: bold;
     margin-top: 2rem;
   }
-
-
 }
 
 @media only screen and (max-width: 365px) {
