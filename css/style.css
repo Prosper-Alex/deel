@@ -640,6 +640,7 @@ section.section-analysis .analysis-img {
 section.section-analysis .analysis-img img {
   height: 100%;
   width: 100%;
+  margin-top: .5rem;
 }
 
 section.section-analysis .analysis-list {
@@ -1427,7 +1428,7 @@ ul.foot-list {
     width: 100%;
   }
   section.section-analysis .analysis-textbox {
-    text-align: center;
+    text-align: baseline;
     justify-content: center;
   }
 
@@ -2088,6 +2089,25 @@ ul.foot-list {
     font-weight: bold;
     margin-top: 2rem;
   }
+
+  /* SECTION BUSINESS  */
+
+  .section-business ul.business-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 3rem;
+    padding: 1rem .7rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    text-align: center;
+    color: #313cbd;
+    background-color: var(--primary-color);
+}
 }
 
 @media only screen and (max-width: 365px) {
