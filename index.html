@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- GOOGLE FONT  -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,6 +24,12 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="stylesheet" href="css/animation.css" />
+
+    <!-- LINKING SWIPER-JS CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>deel HR Company Landing Page (Community)</title>
   </head>
@@ -296,7 +308,7 @@
     </section>
 
     <section class="section-tools center-children">
-      <div class="tools">
+      <div class="tools swiper">
         <div class="tool-textbox">
           <h2 class="heading-secondary sm" data-aos="fade-up">
             See you later 16 different HR tools
@@ -320,9 +332,9 @@
           </div>
         </div>
 
-        <div class="tool-boxs grid-4-cols">
+        <div class="tool-boxs grid-4-cols swiper-wrapper">
           <div
-            class="box green"
+            class="box green swiper-slide"
             data-aos="flip-left"
             data-aos-duration="2000ms">
             <figure class="box-img">
@@ -341,7 +353,7 @@
           </div>
 
           <div
-            class="box sky-blue"
+            class="box sky-blue swiper-slide"
             data-aos="flip-right"
             data-aos-duration="2000ms">
             <figure class="box-img">
@@ -358,7 +370,10 @@
               <img src="/img/icons/arrow.svg" alt="Arrow Icon" />
             </div>
           </div>
-          <div class="box blue" data-aos="flip-left" data-aos-duration="2000ms">
+          <div
+            class="box blue swiper-slide"
+            data-aos="flip-left"
+            data-aos-duration="2000ms">
             <figure class="box-img">
               <img src="/img/icons/laptop.svg" alt="Group Icon" />
             </figure>
@@ -372,7 +387,7 @@
             </div>
           </div>
           <div
-            class="box orange"
+            class="box orange swiper-slide"
             data-aos="flip-right"
             data-aos-duration="2000ms">
             <figure class="box-img">
@@ -777,7 +792,9 @@
       </div>
       <div class="foot">
         <div class="foot-container">
-          <p class="paragraph light-blue">© Copyright 2023. All Rights Reserved.</p>
+          <p class="paragraph light-blue">
+            © Copyright 2023. All Rights Reserved.
+          </p>
           <ul class="foot-list">
             <li>Disclaimer</li>
             <li>Privacy Policy</li>
@@ -799,5 +816,9 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- LINKING SWIPER-JS SCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
