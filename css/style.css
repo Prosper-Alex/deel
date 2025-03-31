@@ -555,6 +555,7 @@ section.section-tools .tools .wrapper .arrows .arrow-right {
 section.section-tools .tool-boxs {
   display: flex;
   gap: 2rem;
+  height: 40rem;
 }
 
 section.section-tools .tool-boxs .box {
