@@ -33,8 +33,7 @@ This landing page promotes a global HR solution platform. It highlights Deel’s
 ## 🛠️ Built With
 
 - HTML5
-- CSS3
-- Sass
+- CSS
 - Flexbox
 - CSS Grid
 - AOS (Animate On Scroll)
