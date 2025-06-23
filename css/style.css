@@ -43,6 +43,16 @@ body {
 
   overflow-x: hidden !important;
 }
+/* Disable dargable images */
+
+img {
+  -webkit-user-drag: none; /* Safari */
+  -khtml-user-drag: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard syntax */
+}
 
 /* UTILITIES */
 .center-children {
@@ -341,7 +351,7 @@ ul.main-nav-list,
   border-radius: 100vw;
   border: 2px solid transparent;
   background-clip: padding-box;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
